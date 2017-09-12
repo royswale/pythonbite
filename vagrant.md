@@ -4,7 +4,7 @@ Change VirtualBox \[File -&gt; Preferences -&gt; Default Mchine Folder\] to “D
 
 ![](https://cdn-images-1.medium.com/max/800/1*pOnp97zmE8fixXnX_M3mvg.png)
 
-Set “VAGRANT\_HOME” environment variable as “D:\Program Files\HashiCorp\Vagrant.vagrant.d”
+Set “VAGRANT\_HOME” environment variable as “D:\Program Files\HashiCorp\Vagrant\.vagrant.d”
 
 [**Environmental Variables - Vagrant by HashiCorp**  
 \_Vagrant has a set of environmental variables that can be used to configure and control it in a global way. This page…\_www.vagrantup.com](https://www.vagrantup.com/docs/other/environmental-variables.html#vagrant_home)
@@ -34,7 +34,7 @@ vagrant box add debianjessie64 “C:\Users\royswale\Downloads\debian.jessie64.vi
 
 ![](https://cdn-images-1.medium.com/max/800/1*AaoUBEQiwzw0Axx6h4d46A.png)
 
-You can find that the box is added to the directory “D:\Program Files\HashiCorp\Vagrant.vagrant.d\boxes”
+You can find that the box is added to the directory “D:\Program Files\HashiCorp\Vagrant\.vagrant.d\boxes”
 
 ![](https://cdn-images-1.medium.com/max/800/1*dRTPdVkky5LEFJR8or6Pjw.png)
 
