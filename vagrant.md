@@ -1,3 +1,5 @@
+https://medium.com/p/6d40f6fb8032/edit
+
 Install VirtualBox and Vagrant to “D:\Program Files\xxx”
 
 Change VirtualBox \[File -&gt; Preferences -&gt; Default Mchine Folder\] to “D:\Program Files\Oracle\VirtualBox\VMs”
