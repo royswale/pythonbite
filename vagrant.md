@@ -1,4 +1,4 @@
-https://medium.com/p/6d40f6fb8032/edit
+[https://medium.com/p/6d40f6fb8032/edit](https://medium.com/p/6d40f6fb8032/edit)
 
 Install VirtualBox and Vagrant to “D:\Program Files\xxx”
 
@@ -6,7 +6,7 @@ Change VirtualBox \[File -&gt; Preferences -&gt; Default Mchine Folder\] to “D
 
 ![](https://cdn-images-1.medium.com/max/800/1*pOnp97zmE8fixXnX_M3mvg.png)
 
-Set “VAGRANT\_HOME” environment variable as “D:\Program Files\HashiCorp\Vagrant\.vagrant.d”
+Set “VAGRANT\_HOME” environment variable as “D:\Program Files\HashiCorp\Vagrant.vagrant.d”
 
 [**Environmental Variables - Vagrant by HashiCorp**  
 \_Vagrant has a set of environmental variables that can be used to configure and control it in a global way. This page…\_www.vagrantup.com](https://www.vagrantup.com/docs/other/environmental-variables.html#vagrant_home)
@@ -36,7 +36,7 @@ vagrant box add debianjessie64 “C:\Users\royswale\Downloads\debian.jessie64.vi
 
 ![](https://cdn-images-1.medium.com/max/800/1*AaoUBEQiwzw0Axx6h4d46A.png)
 
-You can find that the box is added to the directory “D:\Program Files\HashiCorp\Vagrant\.vagrant.d\boxes”
+You can find that the box is added to the directory “D:\Program Files\HashiCorp\Vagrant.vagrant.d\boxes”
 
 ![](https://cdn-images-1.medium.com/max/800/1*dRTPdVkky5LEFJR8or6Pjw.png)
 
@@ -82,4 +82,36 @@ synced folders between host and guest
 
 [**Basic Usage - Synced Folders - Vagrant by HashiCorp**  
 \_Synced folders are configured within your Vagrantfile using the config.vm.synced\_folder method.\_www.vagrantup.com](https://www.vagrantup.com/docs/synced-folders/basic_usage.html)
+
+
+
+[https://www.vagrantup.com/docs/synced-folders/basic\_usage.html](https://www.vagrantup.com/docs/synced-folders/basic_usage.html)
+
+synced folder configure like this
+
+![](/assets/vagrant_synced_folder.png)disable the default synced folder, and sync '../../VMshare' to '/vagrant\_data'.
+
+`vagrant reload`
+
+![](/assets/mount_error.png)mount: unknown filesystem type 'vboxsf'
+
+[https://github.com/hashicorp/vagrant/issues/6769\#issuecomment-252151694](https://github.com/hashicorp/vagrant/issues/6769#issuecomment-252151694)
+
+![](/assets/virtualbox_guest_additions.png)
+
+vagrant plugin install vagrant-vbguest
+
+![](/assets/vbguest.png)vagrant reload
+
+![](/assets/reload.png)
+
+got 34 packages newly installed.
+
+and finally see the mount success infomation
+
+![](/assets/mount.png)vagrant ssh
+
+![](/assets/shared_folder.png)
+
+
 
