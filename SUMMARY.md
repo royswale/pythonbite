@@ -1,5 +1,5 @@
 # Summary
 
 * [Introduction](README.md)
-* [Vagrant](vagrant.md)
+* [configure Vagrant on my PC](vagrant.md)
 

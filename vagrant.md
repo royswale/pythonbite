@@ -1,4 +1,10 @@
+previously publish on medium
+
 [https://medium.com/p/6d40f6fb8032/edit](https://medium.com/p/6d40f6fb8032/edit)
+
+
+
+
 
 Install VirtualBox and Vagrant to “D:\Program Files\xxx”
 
@@ -83,15 +89,19 @@ synced folders between host and guest
 [**Basic Usage - Synced Folders - Vagrant by HashiCorp**  
 \_Synced folders are configured within your Vagrantfile using the config.vm.synced\_folder method.\_www.vagrantup.com](https://www.vagrantup.com/docs/synced-folders/basic_usage.html)
 
-
-
 [https://www.vagrantup.com/docs/synced-folders/basic\_usage.html](https://www.vagrantup.com/docs/synced-folders/basic_usage.html)
 
-synced folder configure like this
+synced folder configure like this in "/d/Vagrant/debian9js/Vagrantfile"
 
 ![](/assets/vagrant_synced_folder.png)disable the default synced folder, and sync '../../VMshare' to '/vagrant\_data'.
 
-`vagrant reload`
+and set memory to 2G
+
+[http://www.jianshu.com/p/3c3f35436c05](http://www.jianshu.com/p/3c3f35436c05 "Vagrant搭建虚拟化开发环境")
+
+```
+vagrant reload
+```
 
 ![](/assets/mount_error.png)mount: unknown filesystem type 'vboxsf'
 
@@ -99,9 +109,15 @@ synced folder configure like this
 
 ![](/assets/virtualbox_guest_additions.png)
 
+```
 vagrant plugin install vagrant-vbguest
+```
 
-![](/assets/vbguest.png)vagrant reload
+![](/assets/vbguest.png)notice: open shadowsocks on my host PC, and turn the mod to 'global' instead of 'PAC'
+
+```
+vagrant reload
+```
 
 ![](/assets/reload.png)
 
@@ -112,6 +128,4 @@ and finally see the mount success infomation
 ![](/assets/mount.png)vagrant ssh
 
 ![](/assets/shared_folder.png)
-
-
 
