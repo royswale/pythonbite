@@ -1,10 +1,6 @@
-previously publish on medium
+this post was previously published on medium
 
 [https://medium.com/p/6d40f6fb8032/edit](https://medium.com/p/6d40f6fb8032/edit)
-
-
-
-
 
 Install VirtualBox and Vagrant to “D:\Program Files\xxx”
 
@@ -128,4 +124,12 @@ and finally see the mount success infomation
 ![](/assets/mount.png)vagrant ssh
 
 ![](/assets/shared_folder.png)
+
+configure private\_network, [http://www.jianshu.com/p/3c3f35436c05](http://www.jianshu.com/p/3c3f35436c05 "Vagrant搭建虚拟化开发环境")
+
+![](/assets/private_network.png)
+
+ping 192.168.33.10 from host PC
+
+![](/assets/ping.png)
 
